@@ -1202,6 +1202,33 @@ section {
 .main-about__title--service {
   text-align: center;
 }
+.main-service {
+  position: relative;
+  z-index: 9;
+}
+.main-service::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background-image: url(../img/forms_2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: -1;
+  height: -webkit-fill-available;
+  bottom: -135px;
+}
+
+footer::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background-image: url(../img/forms.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 0;
+  height: -webkit-fill-available;
+  bottom: -15px;
+}
 
 .main-about__title h3 {
   font-family: Montserrat;
@@ -1226,19 +1253,22 @@ section {
 }
 
 .main-about__img img {
-  width: 567px;
-  height: 368px;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .main-service {
-  height: 742px;
   background-color: #fcfcfc;
+}
+.background {
+  position: absolute;
+  bottom: 0;
 }
 
 .main-service__card-body {
-  width: 270px;
-  height: 372px;
+  width: 100%;
+  height: auto;
   border-radius: 2px;
   box-shadow: 0 2px 14px 0 rgba(0, 63, 112, 0.08);
   background-color: #ffffff;
@@ -1331,7 +1361,7 @@ section {
 
 .date::before {
   content: "";
-  width: 305px;
+  width: 100%;
 
   height: 1px;
   background: #d8d7d7;
@@ -1423,6 +1453,7 @@ section {
 footer {
   background-color: #fcfcfc;
   position: relative;
+  overflow: hidden;
 }
 
 .text {
@@ -1430,9 +1461,9 @@ footer {
   margin-top: 10px;
 }
 
-.footer__content {
-  padding: 50px;
-}
+ .footer__content {
+  padding: 0 50px;
+} 
 
 .footer__content-body {
   font-family: Karla;
@@ -1541,6 +1572,23 @@ footer {
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
+  .date__body img {
+    width: 11px;
+    height: 11px;
+  }
+  .date__body span {
+    font-size: 10px;
+  }
+  .main-service__card-body {
+    margin-bottom: 50px;
+  }
+  .main-service__description {
+    width: 100%;
+  }
+
+  .main-service::after {
+    display: none;
+  }
   .main-banner__content .slick-dots {
     left: 35%;
   }
@@ -1564,7 +1612,6 @@ footer {
     justify-content: center;
   }
   .main-banner__btn {
-    display: flex;
     flex-direction: column;
     text-align: center;
   }
@@ -1580,4 +1627,24 @@ footer {
   .main-about__title span {
     font-size: 15px;
   }
+  .main-service::after.date__body span {
+    font-family: Montserrat;
+    font-size: 10px;
+  }
+  .slick-next {
+    right: 0;
+    top: 200px;
+    width: 35px;
+    height: 33px;
+}
+.slick-prev {
+  transform: rotate(-90deg);
+  left: -10px;
+  top: 200px;
+  width: 35px;
+  height: 33px;
+   }
+   .form__content {
+    width: 100%;
+     }
 }

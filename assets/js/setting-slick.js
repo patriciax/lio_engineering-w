@@ -35,6 +35,7 @@ $('.main-banner__content').slick({
 
 $('.main-noticias__slider').slick({
   infinite: true,
+ 
   slidesToShow: 3,
   slidesToScroll: 1,
   dots: false,
@@ -61,7 +62,7 @@ $('.main-noticias__slider').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: false,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 1000
     }
   }
@@ -91,12 +92,12 @@ $('.main-clients__carousel').slick({
     }
   },
   {
-    breakpoint: 600,
+    breakpoint: 320,
     settings: {
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: false,
-      // autoplay: true,
+       autoplay:false ,
       autoplaySpeed: 1000
     }
   }

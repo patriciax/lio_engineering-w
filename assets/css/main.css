@@ -1146,8 +1146,38 @@ section {
   text-align: center;
 }
 .title__galery p {
+  
+}
+
+.galery__item p {
+  color: #2b4491!important;
   text-align: start!important;
 }
+.galery__item span{
+  font-family: Karla;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #676a74;
+  text-align: start!important;
+}
+.description__galery {
+
+  text-align: initial;
+}
+
+.galery__card {
+  height: 340px!important;
+}
+
+.body__galery {
+
+  height: 333px;
+    }
+
 .bg--service-two{
   background-color: #faf8f8;
   height: 550px;

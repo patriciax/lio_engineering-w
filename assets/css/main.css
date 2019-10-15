@@ -258,7 +258,7 @@ body {
   z-index: 2;
   display: flex;
   position: absolute;
-  bottom: 30%;
+  bottom: 35%;
   right: 53%;
   width: 0%;
 }
@@ -1536,7 +1536,7 @@ footer::after {
 }
 
 .main-banner--nosotros .main-banner__title {
-  margin-top: 70px;
+  margin-top: -110px;
   margin-bottom: 12px;
 }
 

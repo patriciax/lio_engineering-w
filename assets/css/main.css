@@ -1138,6 +1138,16 @@ section {
   bottom: -70px;
 }
 
+.servicios__details img:nth-child(1) {
+    margin-top: -95px;
+}
+
+.servicios__galeria {
+  text-align: center;
+}
+.title__galery p {
+  text-align: start!important;
+}
 .bg--service-two{
   background-color: #faf8f8;
   height: 550px;

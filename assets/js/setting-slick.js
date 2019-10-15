@@ -103,6 +103,7 @@ $('.main-nosotros__content').slick({
   }
   ]
 });
+
 $('.main-team__slider').slick({
   infinite: true,
   slidesToShow: 3,

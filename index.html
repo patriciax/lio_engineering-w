@@ -21,11 +21,25 @@
 
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <div class="main-brand brand-re-2remsponsive">
+        <div class="main-brand__top">
+          <div class="main-brand">
+            <a class="navbar-brand" href="#">
+              <img id="iso" src="assets/img/logo_2.png">
+            </a>
+          </div>
+        </div>
+        <div class="main-brand__fixed">
+          <div class="main-brand">
+            <a class="navbar-brand" href="#">
+              <img id="iso" src="assets/img/logo_2@2x.png">
+            </a>
+          </div>
+        </div>
+        <div class="main-brand brand-responsive">
           <a class="navbar-brand" href="#">
-            <img src="assets/img/logo_2@2x.png"  class="logo">
+            <img id="iso" src="assets/img/logo_2@3x.png">
           </a>
-          <button class="navbar-toggler p-2 border-0 hamburger ml-autos" data-toggle="offcanvas"
+          <button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas"
             type="button">
             <span class="hamburger-box"></span>
             <span class="hamburger-inner"></span>
@@ -64,25 +78,25 @@
             </ul>
             <ul class="navbar-nav mr-autos nav-bottom">
               <li class="nav-item">
-                <a class="nav-link" data="offcanvas" href="#certifications">Inicio</a>
+                <a class="nav-link" data="offcanvas" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#clients" id="clients">Quiénes somos</a>
+                <a class="nav-link" href="quienes-somos.html" id="clients">Quiénes somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#benefits">Servicios</a>
+                <a class="nav-link" href="servicios.html">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data="offcanvas" href="#contact">Carreras</a>
+                <a class="nav-link" data="offcanvas" href="#">Carreras</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data="offcanvas" href="#contact">Noticias</a>
+                <a class="nav-link" data="offcanvas" href="#noticias">Noticias</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data="offcanvas" href="#contact">Eventos</a>
+                <a class="nav-link" data="offcanvas" href="#">Eventos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data="offcanvas" href="#contact">Contacto</a>
+                <a class="nav-link" data="offcanvas" href="#contacto">Contacto</a>
               </li>
             </ul>
           </div>
@@ -124,7 +138,7 @@
     </div>
   </div>
 
-  <section class="main-item__banner container">
+  <div class="main-item__banner container">
     <div class="main-item__contenido">
       <div class="row">
         <div class="col-md-3">
@@ -169,7 +183,7 @@
       </div>
     </div>
     </div>
-  </section>
+  </div>
 
   <section class="main-about container">
     <div class="row">
@@ -186,7 +200,7 @@
             electronic typesetting, remaining essentially unchanged.</p>
         </div>
         <div class="main-banner__btn pt-5">
-          <a href="" class="btn_custom m-0 ">Ver mas</a>
+          <a href="quienes-somos.html" class="btn_custom m-0 ">Ver mas</a>
         </div>
       </div>
 
@@ -218,51 +232,66 @@
       <div class="main-service__card">
         <div class="row">
           <div class="col-md-3">
-            <div class="main-service__card-body">
-              <div class="img_shadow--service">
-                <img src="assets/img/architect.png">
+            <a href="servicios-detalle.html">
+              <div class="main-service__card-body">
+                <div class="img_shadow--service">
+                  <img src="assets/img/architect.png">
+                </div>
+                <p>Ingeniería</p>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                  the
+                  industry's standard dummy text ever since the 1500s. Ipsum is simply dummy text of the printing and
+                  typesetting industry. </span>
               </div>
-              <p>Ingeniería</p>
-              <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s. Ipsum is simply dummy text of the printing and
-                typesetting industry. </span>
-            </div>
+            </a>
           </div>
           <div class="col-md-3">
-            <div class="main-service__card-body">
-              <div class="img_shadow--service">
-                <img src="assets/img/instruction.png">
+            <a href="servicios-detalle.html">
+              <div class="main-service__card-body">
+                <div class="img_shadow--service">
+                  <img src="assets/img/instruction.png">
+                </div>
+                <p>Educación</p>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                  the
+                  industry's standard dummy text ever since the 1500s. Ipsum is simply dummy text of the printing and
+                  typesetting industry. </span>
               </div>
-              <p>Educación</p>
-              <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s. Ipsum is simply dummy text of the printing and
-                typesetting industry. </span>
-            </div>
+            </a>
+
           </div>
           <div class="col-md-3">
-            <div class="main-service__card-body">
-              <div class="img_shadow--service">
-                <img src="assets/img/water-pump.png">
+
+            <a href="servicios-detalle.html">
+              <div class="main-service__card-body">
+                <div class="img_shadow--service">
+                  <img src="assets/img/water-pump.png">
+                </div>
+                <p>Ingeniería
+                  mecánica</p>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                  the
+                  industry's standard dummy text ever since the 1500s. Ipsum is simply dummy text of the printing and
+                  typesetting industry. </span>
               </div>
-              <p>Ingeniería
-                mecánica</p>
-              <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s. Ipsum is simply dummy text of the printing and
-                typesetting industry. </span>
-            </div>
+            </a>
           </div>
           <div class="col-md-3">
-            <div class="main-service__card-body">
-              <div class="img_shadow--service">
-                <img src="assets/img/water-pump.png">
+            <a href="servicios-detalle.html">
+              <div class="main-service__card-body">
+                <div class="img_shadow--service">
+                  <img src="assets/img/water-pump.png">
+                </div>
+                <p>servicio
+                  ingeniería
+                </p>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                  the
+                  industry's standard dummy text ever since the 1500s. Ipsum is simply dummy text of the printing and
+                  typesetting industry. </span>
               </div>
-              <p>servicio
-                ingeniería
-              </p>
-              <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s. Ipsum is simply dummy text of the printing and
-                typesetting industry. </span>
-            </div>
+            </a>
+
           </div>
         </div>
       </div>
@@ -412,43 +441,46 @@
     </div>
   </section>
 
- <section class="container">
-    <div class="form__content">
-      <div class="main-about__title">
-        <span>Quieres </span>
-        <h3>Contactarnos</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has</p>
+  <section class="form__image">
+    <div class="container">
+      <div class="form__content">
+        <div class="main-about__title">
+          <span>Quieres </span>
+          <h3>Contactarnos</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has</p>
+        </div>
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Nombre">
+            </div>
+            <div class="form-group col-md-6">
+
+              <input type="text" class="form-control" id="inputPassword4" placeholder="Telefono">
+            </div>
+          </div>
+          <div class="form-group">
+
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+          <div class="form-group">
+
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Correo">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="inputMessage" placeholder="Asunto">
+          </div>
+
+
+          <div class="main-banner__btn mt-5 btn__form">
+            <a href="" class="btn_custom  ">Enviar</a>
+          </div>
+        </form>
       </div>
-      <form>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Nombre">
-          </div>
-          <div class="form-group col-md-6">
-
-            <input type="text" class="form-control" id="inputPassword4" placeholder="Telefono">
-          </div>
-        </div>
-        <div class="form-group">
-
-          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-        </div>
-        <div class="form-group">
-
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Correo">
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" id="inputMessage" placeholder="Asunto">
-        </div>
-
-
-        <div class="main-banner__btn mt-5 btn__form">
-          <a href="" class="btn_custom  ">Enviar</a>
-        </div>
-      </form>
     </div>
-  </section> 
+
+  </section>
 
   <footer>
     <div class="footer__content container">
@@ -456,10 +488,10 @@
         <div class="col-md-3">
           <div class="footer__content-body">
             <div class="logo text-center">
-                <img src="assets/img/logo.png" alt="">
-            <div class="text_logo">
+              <img src="assets/img/logo.png" alt="">
+              <div class="text_logo">
                 <p class="text">Lorem ipsum dolor sit amet consectetur </p>
-            </div>
+              </div>
             </div>
           </div>
         </div>
@@ -469,21 +501,21 @@
             <h3>Menú</h3>
 
             <ul>
-              
-                <li><a href="">Quienes somos</a></li>
-             
-           
-                <li><a href="">Que hacemos</a></li>
-            
-        
-                <li><a href="">Carreras</a></li>
-            
+
+              <li><a href="">Quienes somos</a></li>
+
+
+              <li><a href="">Que hacemos</a></li>
+
+
+              <li><a href="">Carreras</a></li>
+
               <a href="">
                 <li><a href="">Noticias</a></li>
               </a>
-             
-                <li>Eventos</li>
-              
+
+              <li>Eventos</li>
+
             </ul>
           </div>
         </div>
@@ -493,25 +525,25 @@
 
             <ul>
               <a href="">
-            <div class="item__contact">
-                <img src="assets/img/place.png" alt="">
-                <li>Carrera 51b #78-40 </li>
-            </div>
+                <div class="item__contact">
+                  <img src="assets/img/place.png" alt="">
+                  <li>Carrera 51b #78-40 </li>
+                </div>
               </a>
               <a href="">
                 <div class="item__contact">
-                    <img src="assets/img/icon_6.png" alt="">
-                    <li> Email: info@lion.co</li>
+                  <img src="assets/img/icon_6.png" alt="">
+                  <li> Email: info@lion.co</li>
                 </div>
-               
+
               </a>
               <a href="">
                 <div class="item__contact">
-                    <img src="assets/img/phone-call.png" alt="">
-                    <li>
-                      Phone: 57 (4) 444 45 34</li>
+                  <img src="assets/img/phone-call.png" alt="">
+                  <li>
+                    Phone: 57 (4) 444 45 34</li>
                 </div>
-            
+
               </a>
 
             </ul>
@@ -525,9 +557,9 @@
             <ul class="footer_redes">
 
               <a href="">
-                <li> 
+                <li>
                   <img src="assets/img/facebook.png" alt="">
-                
+
                 </li>
               </a>
 

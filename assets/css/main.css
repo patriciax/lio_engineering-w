@@ -1,6 +1,10 @@
 section {
   padding: 100px 0 100px 0;
 }
+a:hover {
+  color: #f2933e;
+  text-decoration: underline;
+}
 section:nth-child(1) {
   padding: 100px 0 0;
 }
@@ -15,6 +19,13 @@ section:nth-child(1) {
   border-radius: 5px;
   background: #9e9e9e;
 }
+
+.btn_custom:hover {
+
+  background-color: #ffffff;
+  outline: 0;
+  color: #dc911b;
+  }
 
 .btn_custom {
   width: 172px;

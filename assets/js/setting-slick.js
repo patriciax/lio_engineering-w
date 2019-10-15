@@ -35,7 +35,7 @@ $('.main-banner__content').slick({
 
 $('.main-noticias__slider').slick({
   infinite: true,
- 
+
   slidesToShow: 3,
   slidesToScroll: 1,
   dots: false,
@@ -69,12 +69,47 @@ $('.main-noticias__slider').slick({
   ]
 });
 
-$('.main-clients__carousel').slick({
+$('.main-nosotros__content').slick({
   infinite: true,
-  slidesToShow: 4,
-  slidesToScroll: 4,
+  autoplay: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  arrows: false,
+  responsive: [{
+    breakpoint: 1200,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      dots: false
+    }
+  },
+  {
+    breakpoint: 900,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  },
+  {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+
+    }
+  }
+  ]
+});
+$('.main-team__slider').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
   dots: false,
   arrows: true,
+  autoplay:true,
   responsive: [{
     breakpoint: 1200,
     settings: {

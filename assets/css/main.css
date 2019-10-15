@@ -1175,7 +1175,7 @@ section {
 
 .body__galery {
 
-  height: 333px;
+  height: 333px!important;
     }
 
 .bg--service-two{

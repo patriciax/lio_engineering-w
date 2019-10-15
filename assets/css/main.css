@@ -285,9 +285,6 @@ body {
   margin: 0;
 }
 
-.main-banner__content .slick-dots li {
-  margin: 0 10px;
-}
 
 .main-banner__content .slick-dots li button:before {
   color: gray;

@@ -1,10 +1,12 @@
 section {
   padding: 100px 0 100px 0;
 }
+
 a:hover {
   color: #f2933e;
   text-decoration: underline;
 }
+
 section:nth-child(1) {
   padding: 100px 0 0;
 }
@@ -304,6 +306,7 @@ body {
   right: 55%;
   width: 0%;
 }
+
 .main-client__content .slick-dots li button:before {
   color: gray;
   content: "";
@@ -736,6 +739,7 @@ button:focus {
   font-family: Montserrat;
   padding-left: 30px !important;
 }
+
 .nav-bottom .nav-link a:hover {
   color: #f2933e;
 }
@@ -755,6 +759,7 @@ button:focus {
   margin-top: -5px;
   content: "";
 }
+
 .nav-top img {
   width: 16px;
   height: 16px;
@@ -812,9 +817,11 @@ button:focus {
     justify-content: space-between;
   }
 }
+
 .nav-top {
   margin-top: 15px;
 }
+
 .nav-link {
   color: #2b4491;
   text-transform: uppercase;
@@ -954,7 +961,6 @@ button:focus {
 
 .main-banner .main-banner__text .main-banner__title p {
   width: 544px;
-  height: 110px;
   font-family: Montserrat;
   font-size: 45px;
   font-weight: bold;
@@ -1023,6 +1029,7 @@ button:focus {
   height: 100%;
   object-fit: cover;
 }
+
 .main-item__contenido {
   margin-top: -20%;
   z-index: 1;
@@ -1081,6 +1088,7 @@ section {
   height: -webkit-fill-available;
   bottom: -70px;
 }
+
 .bg--service-two::before {
   position: absolute;
   content: "";
@@ -1100,13 +1108,14 @@ section {
 .servicios__galeria {
   text-align: center;
 }
-.title__galery p {
-}
+
+.title__galery p {}
 
 .galery__item p {
   color: #2b4491 !important;
   text-align: start !important;
 }
+
 .galery__item span {
   font-family: Karla;
   font-size: 12px;
@@ -1118,6 +1127,7 @@ section {
   color: #676a74;
   text-align: start !important;
 }
+
 .description__galery {
   text-align: initial;
 }
@@ -1141,6 +1151,7 @@ section {
   justify-content: center;
   align-items: center;
 }
+
 .main-item__content span {
   font-family: Montserrat;
   font-size: 25.2px;
@@ -1184,6 +1195,7 @@ section {
   background: #2b4491;
   top: 30%;
 }
+
 .main-item__contenido .col-md-3:nth-child(1)::before {
   position: absolute;
   content: "";
@@ -1212,10 +1224,12 @@ section {
 .main-about__title--service {
   text-align: center;
 }
+
 .main-service {
   position: relative;
   z-index: 9;
 }
+
 .main-service::after {
   position: absolute;
   content: "";
@@ -1287,6 +1301,7 @@ footer::after {
 .main-service {
   background-color: #fcfcfc;
 }
+
 .background {
   position: absolute;
   bottom: 0;
@@ -1304,6 +1319,7 @@ footer::after {
   padding: 37px;
   align-items: center;
 }
+
 .main-service__card-body span {
   font-family: "Karla", sans-serif;
   font-size: 12px;
@@ -1504,6 +1520,7 @@ footer::after {
 
 .main-banner--nosotros .main-banner__text--nosotros {
   align-items: initial !important;
+  margin-top: 50px;
 }
 
 .main-banner--nosotros__description p {
@@ -1520,7 +1537,7 @@ footer::after {
 
 .main-banner--nosotros .main-banner__text .main-banner__title p {
   width: 712px;
-  height: 55px;
+
   font-family: Montserrat;
   font-size: 45px;
   font-weight: bold;
@@ -1546,6 +1563,7 @@ footer::after {
 
 .history img {
   margin-top: -120px;
+  width: 100%;
 }
 
 .history p {
@@ -1560,19 +1578,26 @@ footer::after {
 }
 
 /**************************************** COMPONENTES**************************************** */
-.main-component__content {
+/* .main-component__content {
   height: 100vh;
+} */
+
+.bg--component {
+  background-image: linear-gradient(to bottom, #f5a741, #f76b1c);
+  position: absolute;
+  height: 300px;
+  top: 0;
+  width: 100%;
+  z-index: -1;
 }
 
 .main-component__body {
-  width: 1440px;
-  height: 300px;
-  background-image: linear-gradient(to bottom, #f5a741, #f76b1c);
-  padding-top: 50px;
+position: relative;
+padding-top: 50px;
 }
 
 .main-card__body {
-  width: 345px;
+  width: 100%;
   height: 372px;
   border-radius: 2px;
   box-shadow: 0 2px 14px 0 rgba(0, 63, 112, 0.08);
@@ -1580,12 +1605,14 @@ footer::after {
   display: flex;
   margin-top: 50px;
 }
+
 .main-card__content {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
+
 .main-card__content h3 {
   font-family: Montserrat;
   font-size: 28px;
@@ -1640,10 +1667,12 @@ footer::after {
   letter-spacing: normal;
   color: #ffffff;
 }
+
 .enfoque {
   position: relative;
-  height: 641px;
+
 }
+
 .enfoque::after {
   position: absolute;
   content: "";
@@ -1655,17 +1684,15 @@ footer::after {
   height: -webkit-fill-available;
   top: 0;
 }
+
 /**************************************** TEAM**************************************** */
 
-#team {
-  height: 641px;
-}
+
 .main-noticia__team {
   height: 372px;
 }
 
-.noticias {
-}
+.noticias {}
 
 .main-noticia__team .date__title p {
   text-align: center;
@@ -1675,6 +1702,7 @@ footer::after {
   height: 177px;
   object-fit: cover;
 }
+
 /***************************************** Servicios**************************************** */
 
 .main-banner--servicios .slick-dots li button:before {
@@ -1818,19 +1846,24 @@ footer {
   .form__image {
     height: auto;
   }
+
   .form__image::after {
     display: none;
   }
+
   section {
     padding: 100px 0 0px 0;
   }
+
   .nav-bottom::before {
     display: none;
     content: "";
   }
+
   .nav-bottom .nav-link {
     padding-left: 0 !important;
   }
+
   .nav-item {
     text-align: center;
     display: flex;
@@ -1842,6 +1875,7 @@ footer {
     margin-top: 15px;
     display: none;
   }
+
   .offcanvas-collapse {
     position: fixed;
     top: 8rem;
@@ -1865,6 +1899,7 @@ footer {
     visibility: visible;
   }
 }
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .main-client__content .slick-dots {
     left: 40%;
@@ -1882,6 +1917,7 @@ footer {
     left: 35%;
   }
 }
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .main-banner__content .slick-dots {
     left: 45%;
@@ -1889,18 +1925,36 @@ footer {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
+
+.main-component__body .col-md-12{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+  .history img {
+    margin-top: auto;
+    width: 100%;
+}
   .hamburger-inner {
     margin-top: 35px;
   }
+
   .copy::before {
     bottom: 40px;
   }
+
   .footer__content .logo img {
     width: 100px;
   }
+
   footer::after {
     bottom: -135px;
   }
+
   .text {
     margin: 0;
     margin-top: 10px;
@@ -1910,27 +1964,34 @@ footer {
     display: flex;
     font-size: 12px;
   }
+
   .footer__content-body h3 {
     font-size: 12px;
   }
+
   .main-service::after {
     bottom: -680px;
   }
+
   .form__content {
     width: 100%;
     margin-bottom: 50px;
   }
+
   .slick-prev {
     transform: rotate(-90deg);
     left: 570px !important;
   }
+
   .slick-next {
     right: 15px !important;
   }
+
   .slick-prev,
   .slick-next {
     top: -13%;
   }
+
   .main-banner__content .slick-dots {
     left: 45%;
   }
@@ -1944,9 +2005,41 @@ footer {
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
+  .bg--component {
+
+    height: 435px;
+     }
+  .main-card__body {
+    width: 100%;
+    height: 372px;
+  }
+
+  .main-component__body {
+    width: auto;
+    height: auto;
+  }
+
+  .history img {
+    margin-top: 0;
+  }
+
+  section {
+    padding: 50px 0 0px 0;
+  }
+
+  .main-banner--nosotros .main-banner__text .main-banner__title p {
+    font-size: 43px;
+  }
+
+  .main-banner--nosotros__description p {
+    width: auto;
+    text-align: center;
+  }
+
   .footer__content-body {
     text-align: center;
   }
+
   .footer__content-body ul {
     text-align: center;
     display: flex;
@@ -1954,9 +2047,11 @@ footer {
     align-items: center;
     justify-content: center;
   }
+
   .footer_redes {
     flex-direction: initial !important;
   }
+
   .copy::before {
     bottom: 35px;
   }
@@ -1965,16 +2060,20 @@ footer {
     top: 35px;
     right: 30px;
   }
+
   .date__body img {
     width: 11px;
     height: 11px;
   }
+
   .date__body span {
     font-size: 10px;
   }
+
   .main-service__card-body {
     margin-bottom: 50px;
   }
+
   .main-service__description {
     width: 100%;
   }
@@ -1982,6 +2081,7 @@ footer {
   .main-service::after {
     display: none;
   }
+
   .main-banner__content .slick-dots {
     left: 35%;
   }
@@ -1989,9 +2089,11 @@ footer {
   .navbar-brand img {
     padding: 12px;
   }
+
   .navbar {
     height: 100px;
   }
+
   .main-item__contenido {
     margin-top: -50%;
   }
@@ -1999,47 +2101,59 @@ footer {
   .main-banner {
     margin-top: -2rem;
   }
+
   .main-banner__title {
     width: 100%;
     display: flex;
     justify-content: center;
   }
+
   .main-banner__btn {
     flex-direction: column;
     text-align: center;
     line-height: 6;
   }
+
   .btn__noticia {
     margin-top: -50px;
   }
+
   .main-item__content {
     margin: 15px 0 15px;
   }
+
   .main-item__contenido .col-md-3::before {
     display: none;
   }
+
   .main-about__title h3 {
     font-size: 25px;
   }
+
   .main-about__title span {
     font-size: 15px;
   }
+
   .main-service::after.date__body span {
     font-family: Montserrat;
     font-size: 10px;
   }
+
   .main-about__title--service {
     margin-bottom: 50px;
   }
+
   .form__image::after {
     background-size: cover;
   }
+
   .slick-next {
     right: 6%;
     top: -36px;
     width: 35px;
     height: 33px;
   }
+
   .slick-prev {
     transform: rotate(-90deg);
     left: 68%;
@@ -2047,45 +2161,49 @@ footer {
     width: 35px;
     height: 33px;
   }
+
   .form__content {
     width: 100%;
   }
 }
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .nav-bottom::before {
     width: 680px;
   }
+
   .navbar-brand img {
     width: 203px;
     height: 70px;
   }
+
   .main-banner .main-banner__text .main-banner__title p {
     font-size: 45px;
-}
+  }
 
-.nav-bottom .nav-link {
+  .nav-bottom .nav-link {
     font-weight: 900;
     text-transform: capitalize;
     font-size: 13px;
   }
+
   .main-clients__carousel .slick-dots {
     left: 40%;
   }
+
   .main-service__card-body {
-
     padding: 14px;
-   
-}
-.main-service::after {
+  }
 
-  bottom: -260px;
-}
-.form__image {
-  height: auto;
-}
+  .main-service::after {
+    bottom: -260px;
+  }
 
-.form__content {
+  .form__image {
+    height: auto;
+  }
 
-  margin-top: -50px;
-}
+  .form__content {
+    margin-top: -50px;
+  }
 }

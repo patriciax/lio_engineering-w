@@ -4,6 +4,7 @@ $('.main-banner__content').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   dots: true,
+  autoplaySpeed:3000,
   arrows: false,
   fade: true,
   cssEase: "linear",

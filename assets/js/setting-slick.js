@@ -1,10 +1,12 @@
 $('.main-banner__content').slick({
   infinite: true,
-  autoplay: false,
+  autoplay: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   dots: true,
   arrows: false,
+  fade: true,
+  cssEase: "linear",
   responsive: [{
     breakpoint: 1200,
     settings: {
@@ -35,7 +37,7 @@ $('.main-banner__content').slick({
 
 $('.main-noticias__slider').slick({
   infinite: true,
-
+  autoplay: true,
   slidesToShow: 3,
   slidesToScroll: 1,
   dots: false,

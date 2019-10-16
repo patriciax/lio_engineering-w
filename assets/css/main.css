@@ -1136,9 +1136,7 @@ section {
   height: 340px !important;
 }
 
-.body__galery {
-  height: 333px !important;
-}
+
 
 .bg--service-two {
   background-color: #faf8f8;
@@ -1591,6 +1589,11 @@ footer::after {
   z-index: -1;
 }
 
+.main-component__body .bg--component {
+
+  height: 333px;
+}
+
 .main-component__body {
 position: relative;
 padding-top: 50px;
@@ -2005,6 +2008,15 @@ footer {
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
+  .servicios__details img:nth-child(1) {
+    margin-top: 0;
+
+}
+.main-component__description p {
+
+  margin-bottom: 50px;
+}
+
   .bg--component {
 
     height: 435px;

@@ -17,9 +17,9 @@
               <div class="date">
                 <div class="date__body">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.png" alt="">
-                  <span> <?php echo get_the_time('j');?>
-                         <?php echo get_the_time('M') ?>
-                         <?php echo get_the_time('Y') ?>
+                  <span> <?php echo get_the_time('j'); ?>
+                         <?php echo get_the_time('M'); ?>
+                         <?php echo get_the_time('Y'); ?>
                  </span>
                 </div>
                 <div class="date__body">
@@ -42,7 +42,7 @@
         <?php endwhile; ?>
       </div>
       <div class="main-banner__btn btn__noticia">
-        <a href="<?php bloginfo('url'); ?>/noticias-all" class="btn_custom  ">Ver mas</a>
+        <a href="<?php the_permalink(); ?>" class="btn_custom  ">Ver mas</a>
       </div>
     </div>
   </section>

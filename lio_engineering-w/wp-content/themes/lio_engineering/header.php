@@ -75,7 +75,7 @@
                 <a class="nav-link idioma  idioma-border" href="#benefits">ESP </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link idioma" href="#benefits">ENG</a>
+                <a class="nav-link idioma" href="#">ENG</a>
               </li>
             </ul>
             <ul class="navbar-nav mr-autos nav-bottom">

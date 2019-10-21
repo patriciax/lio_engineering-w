@@ -76,8 +76,8 @@ function  quienes_somos() {
 	$labels = array(
 		'name'                  => _x( 'quienes_somos', 'Post Type General Name', 'apk' ),
 		'singular_name'         => _x( 'quien_eres', 'Post Type Singular Name', 'apk' ),
-		'menu_name'             => __( 'Banner-Quienes-somos', 'apk' ),
-		'name_admin_bar'        => __( 'Banner_Quienes-somos', 'apk' ),
+		'menu_name'             => __( 'Banner About', 'apk' ),
+		'name_admin_bar'        => __( 'Banner About', 'apk' ),
 		'archives'              => __( 'Item Archives', 'apk' ),
 		'attributes'            => __( 'Item Attributes', 'apk' ),
 		'parent_item_colon'     => __( 'Parent Item:', 'apk' ),
@@ -134,8 +134,8 @@ function banner_service() {
 	$labels = array(
 		'name'                  => _x( 'banners-services', 'Post Type General Name', 'apk' ),
 		'singular_name'         => _x( 'banner_service', 'Post Type Singular Name', 'apk' ),
-		'menu_name'             => __( 'Banner-servicios', 'apk' ),
-		'name_admin_bar'        => __( 'Banner-servicios', 'apk' ),
+		'menu_name'             => __( 'Banner servicios', 'apk' ),
+		'name_admin_bar'        => __( 'Banner servicios', 'apk' ),
 		'archives'              => __( 'Item Archives', 'apk' ),
 		'attributes'            => __( 'Item Attributes', 'apk' ),
 		'parent_item_colon'     => __( 'Parent Item:', 'apk' ),
@@ -191,8 +191,8 @@ function quienes_somos_home() {
 	$labels = array(
 		'name'                  => _x( 'quienes-somos-home', 'Post Type General Name', 'apk' ),
 		'singular_name'         => _x( 'quien-eres-home', 'Post Type Singular Name', 'apk' ),
-		'menu_name'             => __( 'Quienes-somos-home', 'apk' ),
-		'name_admin_bar'        => __( 'Quienes-somos-home', 'apk' ),
+		'menu_name'             => __( 'Home About', 'apk' ),
+		'name_admin_bar'        => __( 'Home About', 'apk' ),
 		'archives'              => __( 'Item Archives', 'apk' ),
 		'attributes'            => __( 'Item Attributes', 'apk' ),
 		'parent_item_colon'     => __( 'Parent Item:', 'apk' ),
@@ -249,8 +249,8 @@ function quienes_somos_historia() {
 	$labels = array(
 		'name'                  => _x( 'nuestras_historias', 'Post Type General Name', 'apk' ),
 		'singular_name'         => _x( 'nuestra_historia', 'Post Type Singular Name', 'apk' ),
-		'menu_name'             => __( 'Nuestra-Historia', 'apk' ),
-		'name_admin_bar'        => __( 'Nuestra-Historia', 'apk' ),
+		'menu_name'             => __( 'Nuestra Historia', 'apk' ),
+		'name_admin_bar'        => __( 'Nuestra Historia', 'apk' ),
 		'archives'              => __( 'Item Archives', 'apk' ),
 		'attributes'            => __( 'Item Attributes', 'apk' ),
 		'parent_item_colon'     => __( 'Parent Item:', 'apk' ),

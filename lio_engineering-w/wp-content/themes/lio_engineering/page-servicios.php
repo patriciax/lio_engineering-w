@@ -48,7 +48,7 @@
           <p><?php echo excerpt(60); ?></p>
         </div>
         <div class="main-banner__btn pt-5">
-          <a href="<?php bloginfo('url'); ?>/servicio-detallado" class="btn_custom m-0 btn_custom--servicios ">Leer más</a>
+          <a href="<?php the_permalink(); ?>" class="btn_custom m-0 btn_custom--servicios ">Leer más</a>
         </div>
       </div>
       <div class="col-md-6">
@@ -85,7 +85,7 @@
                       <p><?php echo excerpt(60); ?></p>
                     </div>
                     <div class="main-banner__btn pt-5">
-                      <a href="<?php bloginfo('url'); ?>/servicio-detallado" class="btn_custom m-0 btn_custom--servicios ">Leer más</a>
+                      <a href="<?php the_permalink(); ?>"  class="btn_custom m-0 btn_custom--servicios ">Leer más</a>
                     </div>
                   </div>
                 </div>

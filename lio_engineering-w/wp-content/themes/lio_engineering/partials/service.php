@@ -17,7 +17,7 @@
           <?php $loop = new WP_Query( $args ); ?>
           <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <div class="col-md-3">
-            <a href="servicios-detalle.html">
+            <a href="<?php the_permalink(); ?>">
               <div class="main-service__card-body">
                 <div class="img_shadow--service">
                     <?php if( get_field('icono') ): ?>

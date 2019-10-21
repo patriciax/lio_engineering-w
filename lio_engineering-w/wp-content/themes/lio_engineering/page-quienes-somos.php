@@ -30,7 +30,7 @@
           <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
       <div class="main-about__title">
         <span>Nuestra </span>
-        <h3><?php the_title(); ?>Historia</h3>
+        <h3><?php the_title(); ?></h3>
       </div>
       <div class="row">
         <div class="col-md-6">

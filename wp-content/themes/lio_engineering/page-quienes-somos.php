@@ -65,7 +65,8 @@
       </div>
     <div class="container">
       <div class="row">
-      <?php $args = array( 'post_type' => 'componentes', 'posts_per_page' => 3 ); ?>
+      <?php $args = array( 'post_type' => 'componentes', 'posts_per_page' => 3, 'orderby' => 'slug',
+                          'order' => 'ASC'); ?>
           <?php $loop = new WP_Query( $args ); ?>
           <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
         <div class="col-md-12 col-lg-4">

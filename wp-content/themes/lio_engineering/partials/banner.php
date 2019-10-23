@@ -38,7 +38,8 @@
                 <img src="<?php the_field('icono_de_logros'); ?>"/>
                 <?php endif; ?>
             </div>
-            <span class="timer" data-to="1965" data-speed="1500"><?php the_field('numero_de_logros'); ?></span>
+            
+            <span class="timer" data-to="1978" data-speed="1500"><?php the_field('numero_de_logros'); ?></span>
             <p><?php the_title(); ?></p> 
           </div>
         </div>

@@ -644,6 +644,12 @@ function logros() {
 add_action( 'init', 'logros', 0 );
 
 
+function wpb_custom_new_menu() {
+	register_nav_menu('my-custom-menu',__( 'Main Menu' ));
+  }
+  add_action( 'init', 'wpb_custom_new_menu' );
+
+
 // Codigo post por categoria
 function numero_total_post($idcat) {
 	global $wpdb;

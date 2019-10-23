@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes('es_US'); ?>>
 
 <head>
   <meta charset="UTF-8">
@@ -79,28 +79,16 @@
                 <a class="nav-link idioma" href="#">ENG</a>
               </li>
             </ul>
-           <?php   $conf = [
-              'menu' =>  '', 
-              'menu_id' =>  'menu-content', // <ul id="navMenu">
-              'menu_class' => 'navbar-nav mr-autos nav-bottom nav-item', // <ul class="navMenu">
-              'container' => 'ul', // <nav></nav>
-              'container_class' => 'navbar navbar-expand-lg', // <nav id="navMenu">
-              'container_id' => 'navbar navbar-expand-lg',    // <nav class="navMenu">    
-              'theme_location' =>  'first', // este sera el nombre del menu que le tengamos asignado en functions.php usando register_nav_menu()
-              'echo' => true,
-              'fallback_cb' => 'wp_page_menu', // en caso de que el menu no exista cargar wp_page_menu
-              'before' => '', // texto antes del texto del enlace.
-              'after' => '', // texto despues del texto del enlace.
-              'link_before' => '<span>', // <a href=""><span> ....
-              'link_after' => '</span>', // </span></a>
-              'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-              'item_spacing' => 'preserve', // preserve / discard
-              'depth' => 2, // numero de niveles que serán mostrados
-              'walker' => '' 
-            ];
-        
-     wp_nav_menu($conf); ?>
-
+        <?php
+          wp_nav_menu( array(
+              'menu_class' => '',
+              'menu_ul' => 'navbar-nav mr-autos nav-bottom nav-item nav-link ',
+              'theme_location' => 'my-custom-menu', 
+              'container_class' => 'navbar-nav mr-autos nav-bottom',
+              'link_before' => '<i class="bx bx-user-pin"></i>' ) ); 
+          ?>
+          
+     
             <ul class="navbar-nav mr-autos nav-bottom">
               <li class="nav-item">
                 <a class="nav-link" data="offcanvas" href="<?php bloginfo('url'); ?>/">Inicio</a>

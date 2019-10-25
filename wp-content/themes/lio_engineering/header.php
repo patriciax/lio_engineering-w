@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes('es_US'); ?>>
+<html <?php language_attributes('es'); ?>>
 
 <head>
   <meta charset="UTF-8">
@@ -72,25 +72,31 @@
               <li class="nav-item">
                 <a class="" href="#benefits"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter.png"></a>
               </li>
+              
               <li class="nav-item">
-                <a class="nav-link idioma  idioma-border" href="#benefits">ESP </a>
+                <a class="nav-link idioma  idioma-border" lang="es-CO" hreflang="es-CO" href="#">ESP</a>
+                
               </li>
               <li class="nav-item">
-                <a class="nav-link idioma" href="#">ENG</a>
-              </li>
+                <a class="nav-link idioma" lang="en-US" hreflang="en-US" href="#">ENG</a>
+              </li>  
+              <?php if(is_active_sidebar('main_sidebar')){
+                dynamic_sidebar('main_sidebar');
+               }?>
             </ul>
-        <?php
+            <?php
           wp_nav_menu( array(
-              'menu_class' => '',
-              'menu_ul' => 'navbar-nav mr-autos nav-bottom nav-item nav-link ',
+              'menu_class' => 'navbar-nav mr-autos nav-bottom', 
+              'menu_class_li' => 'navbar-nav mr-autos nav-bottom', 
+
               'theme_location' => 'my-custom-menu', 
-              'container_class' => 'navbar-nav mr-autos nav-bottom',
+              'container_class' => 'menu',
               'link_before' => '<i class="bx bx-user-pin"></i>' ) ); 
           ?>
+         
+             <!-- <ul class="navbar-nav mr-autos nav-bottom"> -->
           
-     
-            <ul class="navbar-nav mr-autos nav-bottom">
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" data="offcanvas" href="<?php bloginfo('url'); ?>/">Inicio</a>
               </li>
               <li class="nav-item">
@@ -110,7 +116,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" data="offcanvas" href="#contacto">Contacto</a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>

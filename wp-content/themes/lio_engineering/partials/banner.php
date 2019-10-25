@@ -1,13 +1,13 @@
-
   <div class="main-banner">
     <div class="main-banner__content">
     <?php $args = array( 'post_type' => 'banner' ); ?>
-            <?php $loop = new WP_Query( $args ); ?>
+    <?php $loop = new WP_Query( $args ); ?>
     <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+    <?php if( get_field('banner_inicio') ): ?>
       <div class="main-banner__item">
         <div class="main-banner__text">
           <div class="main-banner__title animated fadeIn wow">
-             <p><?php the_title(); ?></p>        
+             <p><?php the_field('titulo_inicio'); ?></p>        
           </div>
           <div class="main-banner__btn ">
             <a href="" class="btn_custom ">Ver mas</a>
@@ -19,6 +19,7 @@
             alt="">
         </div>
       </div>
+      <?php endif; ?>
       <?php endwhile; ?>
     </div>
   </div>

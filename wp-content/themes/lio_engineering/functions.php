@@ -10,7 +10,6 @@ the_post_thumbnail( array(100,100) );
 
 add_theme_support( 'post-thumbnails' );
 
-
 // Register Custom Post Type
 function banner() {
 
@@ -45,7 +44,7 @@ function banner() {
 	);
 	$args = array(
 		'label'                 => __( 'banner', 'apk' ),
-		'description'           => __( 'banner para lio engineering', 'apk' ),
+		'description'           => __( 'banner lio', 'apk' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'thumbnail' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
@@ -67,123 +66,6 @@ function banner() {
 
 }
 add_action( 'init', 'banner', 0 );
-
-
-
-// Register Custom Post Type
-function  quienes_somos() {
-
-	$labels = array(
-		'name'                  => _x( 'quienes_somos', 'Post Type General Name', 'apk' ),
-		'singular_name'         => _x( 'quien_eres', 'Post Type Singular Name', 'apk' ),
-		'menu_name'             => __( 'Banner About', 'apk' ),
-		'name_admin_bar'        => __( 'Banner About', 'apk' ),
-		'archives'              => __( 'Item Archives', 'apk' ),
-		'attributes'            => __( 'Item Attributes', 'apk' ),
-		'parent_item_colon'     => __( 'Parent Item:', 'apk' ),
-		'all_items'             => __( 'All Items', 'apk' ),
-		'add_new_item'          => __( 'Add New Item', 'apk' ),
-		'add_new'               => __( 'Add New', 'apk' ),
-		'new_item'              => __( 'New Item', 'apk' ),
-		'edit_item'             => __( 'Edit Item', 'apk' ),
-		'update_item'           => __( 'Update Item', 'apk' ),
-		'view_item'             => __( 'View Item', 'apk' ),
-		'view_items'            => __( 'View Items', 'apk' ),
-		'search_items'          => __( 'Search Item', 'apk' ),
-		'not_found'             => __( 'Not found', 'apk' ),
-		'not_found_in_trash'    => __( 'Not found in Trash', 'apk' ),
-		'featured_image'        => __( 'Featured Image', 'apk' ),
-		'set_featured_image'    => __( 'Set featured image', 'apk' ),
-		'remove_featured_image' => __( 'Remove featured image', 'apk' ),
-		'use_featured_image'    => __( 'Use as featured image', 'apk' ),
-		'insert_into_item'      => __( 'Insert into item', 'apk' ),
-		'uploaded_to_this_item' => __( 'Uploaded to this item', 'apk' ),
-		'items_list'            => __( 'Items list', 'apk' ),
-		'items_list_navigation' => __( 'Items list navigation', 'apk' ),
-		'filter_items_list'     => __( 'Filter items list', 'apk' ),
-	);
-	$args = array(
-		'label'                 => __( 'quien_eres', 'apk' ),
-		'description'           => __( 'banner de quienes somos', 'apk' ),
-		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail' ),
-		'taxonomies'            => array( 'category', 'post_tag' ),
-		'hierarchical'          => false,
-		'public'                => true,
-		'show_ui'               => true,
-		'show_in_menu'          => true,
-		'menu_position'         => 5,
-		'menu_icon'             => 'dashicons-admin-home',
-		'show_in_admin_bar'     => true,
-		'show_in_nav_menus'     => true,
-		'can_export'            => true,
-		'has_archive'           => true,
-		'exclude_from_search'   => false,
-		'publicly_queryable'    => true,
-		'capability_type'       => 'page',
-	);
-	register_post_type( 'quienes_somos', $args );
-
-}
-add_action( 'init', 'quienes_somos', 0 );
-
-
-// Register Custom Post Type
-function banner_service() {
-
-	$labels = array(
-		'name'                  => _x( 'banners-services', 'Post Type General Name', 'apk' ),
-		'singular_name'         => _x( 'banner_service', 'Post Type Singular Name', 'apk' ),
-		'menu_name'             => __( 'Banner servicios', 'apk' ),
-		'name_admin_bar'        => __( 'Banner servicios', 'apk' ),
-		'archives'              => __( 'Item Archives', 'apk' ),
-		'attributes'            => __( 'Item Attributes', 'apk' ),
-		'parent_item_colon'     => __( 'Parent Item:', 'apk' ),
-		'all_items'             => __( 'All Items', 'apk' ),
-		'add_new_item'          => __( 'Add New Item', 'apk' ),
-		'add_new'               => __( 'Add New', 'apk' ),
-		'new_item'              => __( 'New Item', 'apk' ),
-		'edit_item'             => __( 'Edit Item', 'apk' ),
-		'update_item'           => __( 'Update Item', 'apk' ),
-		'view_item'             => __( 'View Item', 'apk' ),
-		'view_items'            => __( 'View Items', 'apk' ),
-		'search_items'          => __( 'Search Item', 'apk' ),
-		'not_found'             => __( 'Not found', 'apk' ),
-		'not_found_in_trash'    => __( 'Not found in Trash', 'apk' ),
-		'featured_image'        => __( 'Featured Image', 'apk' ),
-		'set_featured_image'    => __( 'Set featured image', 'apk' ),
-		'remove_featured_image' => __( 'Remove featured image', 'apk' ),
-		'use_featured_image'    => __( 'Use as featured image', 'apk' ),
-		'insert_into_item'      => __( 'Insert into item', 'apk' ),
-		'uploaded_to_this_item' => __( 'Uploaded to this item', 'apk' ),
-		'items_list'            => __( 'Items list', 'apk' ),
-		'items_list_navigation' => __( 'Items list navigation', 'apk' ),
-		'filter_items_list'     => __( 'Filter items list', 'apk' ),
-	);
-	$args = array(
-		'label'                 => __( 'banner_service', 'apk' ),
-		'description'           => __( 'banner para set servicios', 'apk' ),
-		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail' ),
-		'taxonomies'            => array( 'category', 'post_tag' ),
-		'hierarchical'          => false,
-		'public'                => true,
-		'show_ui'               => true,
-		'show_in_menu'          => true,
-		'menu_position'         => 5,
-		'menu_icon'             => 'dashicons-admin-home',
-		'show_in_admin_bar'     => true,
-		'show_in_nav_menus'     => true,
-		'can_export'            => true,
-		'has_archive'           => true,
-		'exclude_from_search'   => false,
-		'publicly_queryable'    => true,
-		'capability_type'       => 'page',
-	);
-	register_post_type( 'banner_service', $args );
-
-}
-add_action( 'init', 'banner_service', 0 );
 
 // Register Custom Post Type
 function quienes_somos_home() {
@@ -649,6 +531,21 @@ function wpb_custom_new_menu() {
   }
   add_action( 'init', 'wpb_custom_new_menu' );
 
+
+
+  function apk_register_sidebar(){
+	register_sidebar( array(
+	'name'             => __('Sidebar principal','apk'),
+	'id'               => 'main_sidebar',
+	'description'      => __('Este es el Sidebar principal','apk'),
+	'before_widget'    => '<div id="%1$s" class="nav-item">',
+	'after_widget'     => '</div>',
+	'before_title'     => '	<a class="nav-link idioma">',
+	'after_title'      => '</a>',
+	));
+	
+	}
+	add_action('widgets_init', 'apk_register_sidebar');
 
 // Codigo post por categoria
 function numero_total_post($idcat) {

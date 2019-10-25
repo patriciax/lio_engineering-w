@@ -1,0 +1,368 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Lio Engineering\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-23 20:45+0000\n"
+"PO-Revision-Date: 2019-10-23 20:45+0000\n"
+"Last-Translator: lio_engineering <pittersluis23@gmail.com>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.1; wp-5.2.4"
+
+#: functions.php:18
+msgctxt "Post Type General Name"
+msgid "banners"
+msgstr ""
+
+#: functions.php:19
+msgctxt "Post Type Singular Name"
+msgid "banner"
+msgstr ""
+
+#: functions.php:20 functions.php:21
+msgid "Banner"
+msgstr ""
+
+#: functions.php:22 functions.php:81 functions.php:139 functions.php:196
+#: functions.php:254 functions.php:311 functions.php:368 functions.php:425
+#: functions.php:597
+msgid "Item Archives"
+msgstr ""
+
+#: functions.php:23 functions.php:82 functions.php:140 functions.php:197
+#: functions.php:255 functions.php:312 functions.php:369 functions.php:426
+#: functions.php:598
+msgid "Item Attributes"
+msgstr ""
+
+#: functions.php:24 functions.php:83 functions.php:141 functions.php:198
+#: functions.php:256 functions.php:313 functions.php:370 functions.php:427
+#: functions.php:599
+msgid "Parent Item:"
+msgstr ""
+
+#: functions.php:25 functions.php:84 functions.php:142 functions.php:199
+#: functions.php:257 functions.php:314 functions.php:371 functions.php:428
+#: functions.php:600
+msgid "All Items"
+msgstr ""
+
+#: functions.php:26 functions.php:85 functions.php:143 functions.php:200
+#: functions.php:258 functions.php:315 functions.php:372 functions.php:429
+#: functions.php:601
+msgid "Add New Item"
+msgstr ""
+
+#: functions.php:27 functions.php:86 functions.php:144 functions.php:201
+#: functions.php:259 functions.php:316 functions.php:373 functions.php:430
+#: functions.php:602
+msgid "Add New"
+msgstr ""
+
+#: functions.php:28 functions.php:87 functions.php:145 functions.php:202
+#: functions.php:260 functions.php:317 functions.php:374 functions.php:431
+#: functions.php:603
+msgid "New Item"
+msgstr ""
+
+#: functions.php:29 functions.php:88 functions.php:146 functions.php:203
+#: functions.php:261 functions.php:318 functions.php:375 functions.php:432
+#: functions.php:604
+msgid "Edit Item"
+msgstr ""
+
+#: functions.php:30 functions.php:89 functions.php:147 functions.php:204
+#: functions.php:262 functions.php:319 functions.php:376 functions.php:433
+#: functions.php:605
+msgid "Update Item"
+msgstr ""
+
+#: functions.php:31 functions.php:90 functions.php:148 functions.php:205
+#: functions.php:263 functions.php:320 functions.php:377 functions.php:434
+#: functions.php:606
+msgid "View Item"
+msgstr ""
+
+#: functions.php:32 functions.php:91 functions.php:149 functions.php:206
+#: functions.php:264 functions.php:321 functions.php:378 functions.php:435
+#: functions.php:607
+msgid "View Items"
+msgstr ""
+
+#: functions.php:33 functions.php:92 functions.php:150 functions.php:207
+#: functions.php:265 functions.php:322 functions.php:379 functions.php:436
+#: functions.php:608
+msgid "Search Item"
+msgstr ""
+
+#: functions.php:34 functions.php:93 functions.php:151 functions.php:208
+#: functions.php:266 functions.php:323 functions.php:380 functions.php:437
+#: functions.php:609
+msgid "Not found"
+msgstr ""
+
+#: functions.php:35 functions.php:94 functions.php:152 functions.php:209
+#: functions.php:267 functions.php:324 functions.php:381 functions.php:438
+#: functions.php:610
+msgid "Not found in Trash"
+msgstr ""
+
+#: functions.php:36 functions.php:95 functions.php:153 functions.php:210
+#: functions.php:268 functions.php:325 functions.php:382 functions.php:439
+#: functions.php:611
+msgid "Featured Image"
+msgstr ""
+
+#: functions.php:37 functions.php:96 functions.php:154 functions.php:211
+#: functions.php:269 functions.php:326 functions.php:383 functions.php:440
+#: functions.php:612
+msgid "Set featured image"
+msgstr ""
+
+#: functions.php:38 functions.php:97 functions.php:155 functions.php:212
+#: functions.php:270 functions.php:327 functions.php:384 functions.php:441
+#: functions.php:613
+msgid "Remove featured image"
+msgstr ""
+
+#: functions.php:39 functions.php:98 functions.php:156 functions.php:213
+#: functions.php:271 functions.php:328 functions.php:385 functions.php:442
+#: functions.php:614
+msgid "Use as featured image"
+msgstr ""
+
+#: functions.php:40 functions.php:99 functions.php:157 functions.php:214
+#: functions.php:272 functions.php:329 functions.php:386 functions.php:443
+#: functions.php:615
+msgid "Insert into item"
+msgstr ""
+
+#: functions.php:41 functions.php:100 functions.php:158 functions.php:215
+#: functions.php:273 functions.php:330 functions.php:387 functions.php:444
+#: functions.php:616
+msgid "Uploaded to this item"
+msgstr ""
+
+#: functions.php:42 functions.php:101 functions.php:159 functions.php:216
+#: functions.php:274 functions.php:331 functions.php:388 functions.php:445
+#: functions.php:617
+msgid "Items list"
+msgstr ""
+
+#: functions.php:43 functions.php:102 functions.php:160 functions.php:217
+#: functions.php:275 functions.php:332 functions.php:389 functions.php:446
+#: functions.php:618
+msgid "Items list navigation"
+msgstr ""
+
+#: functions.php:44 functions.php:103 functions.php:161 functions.php:218
+#: functions.php:276 functions.php:333 functions.php:390 functions.php:447
+#: functions.php:619
+msgid "Filter items list"
+msgstr ""
+
+#: functions.php:47
+msgid "banner"
+msgstr ""
+
+#: functions.php:48
+msgid "banner para lio engineering"
+msgstr ""
+
+#: functions.php:77
+msgctxt "Post Type General Name"
+msgid "quienes_somos"
+msgstr ""
+
+#: functions.php:78
+msgctxt "Post Type Singular Name"
+msgid "quien_eres"
+msgstr ""
+
+#: functions.php:79 functions.php:80
+msgid "Banner About"
+msgstr ""
+
+#: functions.php:106
+msgid "quien_eres"
+msgstr ""
+
+#: functions.php:107
+msgid "banner de quienes somos"
+msgstr ""
+
+#: functions.php:135
+msgctxt "Post Type General Name"
+msgid "banners-services"
+msgstr ""
+
+#: functions.php:136
+msgctxt "Post Type Singular Name"
+msgid "banner_service"
+msgstr ""
+
+#: functions.php:137 functions.php:138
+msgid "Banner servicios"
+msgstr ""
+
+#: functions.php:164
+msgid "banner_service"
+msgstr ""
+
+#: functions.php:165
+msgid "banner para set servicios"
+msgstr ""
+
+#: functions.php:192
+msgctxt "Post Type General Name"
+msgid "quienes-somos-home"
+msgstr ""
+
+#: functions.php:193
+msgctxt "Post Type Singular Name"
+msgid "quien-eres-home"
+msgstr ""
+
+#: functions.php:194 functions.php:195
+msgid "Home About"
+msgstr ""
+
+#: functions.php:221
+msgid "quien-eres-home"
+msgstr ""
+
+#: functions.php:222
+msgid "Post Type Description"
+msgstr ""
+
+#: functions.php:250
+msgctxt "Post Type General Name"
+msgid "nuestras_historias"
+msgstr ""
+
+#: functions.php:251
+msgctxt "Post Type Singular Name"
+msgid "nuestra_historia"
+msgstr ""
+
+#: functions.php:252 functions.php:253
+msgid "Nuestra Historia"
+msgstr ""
+
+#: functions.php:279
+msgid "nuestra_historia"
+msgstr ""
+
+#: functions.php:280
+msgid "nuestras_historias de lio"
+msgstr ""
+
+#: functions.php:307
+msgctxt "Post Type General Name"
+msgid "teams"
+msgstr ""
+
+#: functions.php:308
+msgctxt "Post Type Singular Name"
+msgid "team"
+msgstr ""
+
+#: functions.php:309 functions.php:310
+msgid "Team"
+msgstr ""
+
+#: functions.php:336
+msgid "team"
+msgstr ""
+
+#: functions.php:337
+msgid "nuestro equipo"
+msgstr ""
+
+#: functions.php:364
+msgctxt "Post Type General Name"
+msgid "galerias"
+msgstr ""
+
+#: functions.php:365
+msgctxt "Post Type Singular Name"
+msgid "galeria"
+msgstr ""
+
+#: functions.php:366 functions.php:367
+msgid "Galeria"
+msgstr ""
+
+#: functions.php:393
+msgid "galeria"
+msgstr ""
+
+#: functions.php:394
+msgid "galeria de nuestros servicios"
+msgstr ""
+
+#: functions.php:421
+msgctxt "Post Type General Name"
+msgid "nuestros_servicios"
+msgstr ""
+
+#: functions.php:422
+msgctxt "Post Type Singular Name"
+msgid "nuestro_servicio"
+msgstr ""
+
+#: functions.php:423 functions.php:424
+msgid "Nuestros_Servicios"
+msgstr ""
+
+#: functions.php:450
+msgid "nuestro_servicio"
+msgstr ""
+
+#: functions.php:451
+msgid "los servicios que ofrece Lio"
+msgstr ""
+
+#: functions.php:593
+msgctxt "Post Type General Name"
+msgid "logros"
+msgstr ""
+
+#: functions.php:594
+msgctxt "Post Type Singular Name"
+msgid "logro"
+msgstr ""
+
+#: functions.php:595 functions.php:596
+msgid "Logros"
+msgstr ""
+
+#: functions.php:622
+msgid "logro"
+msgstr ""
+
+#: functions.php:623
+msgid "logros de la empresa"
+msgstr ""
+
+#. Name of the theme
+#. Description of the theme
+msgid "Lio Engineering"
+msgstr ""
+
+#. URI of the theme
+msgid "https://www.lioengineering.com"
+msgstr ""
+
+#. Author of the theme
+msgid "luis pitters"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://contactmarketing.com"
+msgstr ""

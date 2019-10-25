@@ -1,24 +1,26 @@
 <?php  get_header(); ?>
 <div class="main-banner main-banner--nosotros">
     <div class="main-nosotros__content">
-    <?php $args = array( 'post_type' => 'quienes_somos' ); ?>
+    <?php $args = array( 'post_type' => 'banner' ); ?>
             <?php $loop = new WP_Query( $args ); ?>
     <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+    <?php if( get_field('banner_about') ): ?>
       <div class="main-banner__item">
         <div class="main-banner__text main-banner__text--nosotros">
           <div class="main-banner__title container">
-            <p></p>
-            <p><?php the_title(); ?></p>
+           
+            <p><?php the_field('titulo_about'); ?></p>
           </div>
           <div class="main-banner--nosotros__description container">
-              <p> <?php the_content(); ?></p>
+              <p> <?php the_field('descripcion_about'); ?></p>
           </div>
         </div>
         <div class="main-banner__img">
-          <img src="<?php echo get_the_post_thumbnail_url(); ?>"
+        <img src="<?php echo get_the_post_thumbnail_url(); ?>"
             alt="">
         </div>
       </div>
+       <?php endif; ?>
        <?php endwhile; ?>
     </div>
   </div>

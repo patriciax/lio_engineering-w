@@ -684,18 +684,6 @@ button:focus {
     }
 }
 
-ul#menu-main-menu {
-    display: flex !important;
-    width: 100%;
-    list-style: none;
-    justify-content: flex-end;
-    font-weight: 900;
-    text-transform: capitalize;
-    font-size: 15px;
-    font-family: Montserrat;
-    padding-left: 30px !important;
-}
-
 .main-general__subtitle {
     text-align: center;
     position: relative;

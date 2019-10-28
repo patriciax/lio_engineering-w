@@ -76,6 +76,78 @@ body {
     padding-top: 56px;
 }
 
+
+
+
+.menu ul li a{
+    font-weight: 900;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: Montserrat;
+    padding-left: 30px ;
+    color: #2b4491;
+}
+
+.nav-top ul li a {
+    padding-left: 0px !important;
+  
+}
+
+.lang-item-es a::before {
+    content: "ESP";
+    position: absolute;
+    font-weight: 100 !important;
+    text-transform: capitalize;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2b4491;
+}
+
+.lang-item-en a::before {
+    content: "ENG";
+    position: absolute;
+    font-weight: 100 !important;
+    text-transform: capitalize;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2b4491;
+}
+
+#polylang-2 ul{
+display: flex;
+list-style: none;
+padding: 0;
+}
+
+
+
+#polylang-2 img {
+opacity: 0;
+margin-right: 22px;
+}
+
+.lang-item:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    color: #2b4491;
+    border-right: 1px solid #2b449130;
+}
+
+
+
+
 .nav-scroller {
     position: relative;
     z-index: 2;
@@ -1267,9 +1339,6 @@ section {
     height: -webkit-fill-available;
 }
 
-.form__image {
-    height: 800px;
-}
 
 footer::after {
     position: absolute;
@@ -1501,7 +1570,7 @@ footer::after {
 .form__content {
     width: 66%;
     box-shadow: 0 2px 19px 0 rgba(139, 139, 141, 0.29);
-    padding: 50px;
+    padding: 50px 25px 0px 25px;
     border-radius: 5px;
     background: #fff;
 }
@@ -1517,6 +1586,7 @@ footer::after {
 .form-control {
     border: 1px solid #ced4da00 !important;
     box-shadow: 0 1px 8px 0 rgba(139, 139, 141, 0.29) !important;
+    line-height: .8!important;
 }
 
 

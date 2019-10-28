@@ -34,7 +34,7 @@
             <a href="" class="btn_custom ">Enviar</a>
           </div> -->
         </form>
-        <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 3, 'title' => false, 'description' => false ) ); ?>
+        <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 2, 'title' => false, 'description' => false ) ); ?>
       </div>
     </div>
 

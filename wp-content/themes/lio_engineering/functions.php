@@ -14,16 +14,16 @@ add_theme_support( 'post-thumbnails' );
 function banner() {
 
 	$labels = array(
-		'name'                  => _x( 'banners', 'Post Type General Name', 'apk' ),
+		'name'                  => _x( 'Todos los Banners', 'Post Type General Name', 'apk' ),
 		'singular_name'         => _x( 'banner', 'Post Type Singular Name', 'apk' ),
-		'menu_name'             => __( 'Banner', 'apk' ),
+		'menu_name'             => __( 'Banners', 'apk' ),
 		'name_admin_bar'        => __( 'Banner', 'apk' ),
 		'archives'              => __( 'Item Archives', 'apk' ),
 		'attributes'            => __( 'Item Attributes', 'apk' ),
 		'parent_item_colon'     => __( 'Parent Item:', 'apk' ),
 		'all_items'             => __( 'All Items', 'apk' ),
-		'add_new_item'          => __( 'Add New Item', 'apk' ),
-		'add_new'               => __( 'Add New', 'apk' ),
+		'add_new_item'          => __( 'Agregar nombre del banner', 'apk' ),
+		'add_new'               => __( 'Agregar nuevo', 'apk' ),
 		'new_item'              => __( 'New Item', 'apk' ),
 		'edit_item'             => __( 'Edit Item', 'apk' ),
 		'update_item'           => __( 'Update Item', 'apk' ),
@@ -47,7 +47,7 @@ function banner() {
 		'description'           => __( 'banner lio', 'apk' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'thumbnail' ),
-		'taxonomies'            => array( 'category', 'post_tag' ),
+		// 'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -67,14 +67,130 @@ function banner() {
 }
 add_action( 'init', 'banner', 0 );
 
+// Register Custom Post Type LOGROS
+function logros() {
+
+	$labels = array(
+		'name'                  => _x( 'logros', 'Post Type General Name', 'apk' ),
+		'singular_name'         => _x( 'logro', 'Post Type Singular Name', 'apk' ),
+		'menu_name'             => __( 'Logros', 'apk' ),
+		'name_admin_bar'        => __( 'Logros', 'apk' ),
+		'archives'              => __( 'Item Archives', 'apk' ),
+		'attributes'            => __( 'Item Attributes', 'apk' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'apk' ),
+		'all_items'             => __( 'Todos los logros', 'apk' ),
+		'add_new_item'          => __( 'Agergar nuevo logro', 'apk' ),
+		'add_new'               => __( 'Add New', 'apk' ),
+		'new_item'              => __( 'New Item', 'apk' ),
+		'edit_item'             => __( 'Edit Item', 'apk' ),
+		'update_item'           => __( 'Update Item', 'apk' ),
+		'view_item'             => __( 'View Item', 'apk' ),
+		'view_items'            => __( 'View Items', 'apk' ),
+		'search_items'          => __( 'Search Item', 'apk' ),
+		'not_found'             => __( 'Not found', 'apk' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'apk' ),
+		'featured_image'        => __( 'Featured Image', 'apk' ),
+		'set_featured_image'    => __( 'Set featured image', 'apk' ),
+		'remove_featured_image' => __( 'Remove featured image', 'apk' ),
+		'use_featured_image'    => __( 'Use as featured image', 'apk' ),
+		'insert_into_item'      => __( 'Insert into item', 'apk' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this item', 'apk' ),
+		'items_list'            => __( 'Items list', 'apk' ),
+		'items_list_navigation' => __( 'Items list navigation', 'apk' ),
+		'filter_items_list'     => __( 'Filter items list', 'apk' ),
+	);
+	$args = array(
+		'label'                 => __( 'logro', 'apk' ),
+		'description'           => __( 'logros de la empresa', 'apk' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title' ),
+		// 'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-awards',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'logros', $args );
+
+}
+add_action( 'init', 'logros', 0 );
+
+
+
 // Register Custom Post Type
 function quienes_somos_home() {
 
 	$labels = array(
-		'name'                  => _x( 'quienes-somos-home', 'Post Type General Name', 'apk' ),
+		'name'                  => _x( 'Quienes Somos  (Inicio)', 'Post Type General Name', 'apk' ),
 		'singular_name'         => _x( 'quien-eres-home', 'Post Type Singular Name', 'apk' ),
-		'menu_name'             => __( 'Home About', 'apk' ),
+		'menu_name'             => __( 'Quienes somos', 'apk' ),
 		'name_admin_bar'        => __( 'Home About', 'apk' ),
+		'archives'              => __( 'Item Archives', 'apk' ),
+		'attributes'            => __( 'Item Attributes', 'apk' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'apk' ),
+		'all_items'             => __( 'Todos Items', 'apk' ),
+		'add_new_item'          => __( 'Agregar nuevo Item', 'apk' ),
+		'add_new'               => __( 'Agregar nuevo', 'apk' ),
+		'new_item'              => __( 'New Item', 'apk' ),
+		'edit_item'             => __( 'Editar Item', 'apk' ),
+		'update_item'           => __( 'Actualizar Item', 'apk' ),
+		'view_item'             => __( 'Ver Item', 'apk' ),
+		'view_items'            => __( 'Ver Items', 'apk' ),
+		'search_items'          => __( 'Buscar Item', 'apk' ),
+		'not_found'             => __( 'Not found', 'apk' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'apk' ),
+		'featured_image'        => __( 'Featured Image', 'apk' ),
+		'set_featured_image'    => __( 'Set featured image', 'apk' ),
+		'remove_featured_image' => __( 'Remove featured image', 'apk' ),
+		'use_featured_image'    => __( 'Use as featured image', 'apk' ),
+		'insert_into_item'      => __( 'Insert into item', 'apk' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this item', 'apk' ),
+		'items_list'            => __( 'Items list', 'apk' ),
+		'items_list_navigation' => __( 'Items list navigation', 'apk' ),
+		'filter_items_list'     => __( 'Filter items list', 'apk' ),
+	);
+	$args = array(
+		'label'                 => __( 'quien-eres-home', 'apk' ),
+		'description'           => __( 'Post Type Description', 'apk' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail' ),
+		// 'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-id',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'quienes-somos-home', $args );
+
+}
+add_action( 'init', 'quienes_somos_home', 0 );
+
+// Register Custom Post Type
+function nuestros_servicios() {
+
+	$labels = array(
+		'name'                  => _x( 'Nuestros servicios', 'Post Type General Name', 'apk' ),
+		'singular_name'         => _x( 'nuestro_servicio', 'Post Type Singular Name', 'apk' ),
+		'menu_name'             => __( 'Nuestros Servicios', 'apk' ),
+		'name_admin_bar'        => __( 'Nuestros_Servicios', 'apk' ),
 		'archives'              => __( 'Item Archives', 'apk' ),
 		'attributes'            => __( 'Item Attributes', 'apk' ),
 		'parent_item_colon'     => __( 'Parent Item:', 'apk' ),
@@ -100,17 +216,17 @@ function quienes_somos_home() {
 		'filter_items_list'     => __( 'Filter items list', 'apk' ),
 	);
 	$args = array(
-		'label'                 => __( 'quien-eres-home', 'apk' ),
-		'description'           => __( 'Post Type Description', 'apk' ),
+		'label'                 => __( 'nuestro_servicio', 'apk' ),
+		'description'           => __( 'los servicios que ofrece Lio', 'apk' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail' ),
-		'taxonomies'            => array( 'category', 'post_tag' ),
+		// 'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
 		'show_in_menu'          => true,
 		'menu_position'         => 5,
-		'menu_icon'             => 'dashicons-calendar-alt',
+		'menu_icon'             => 'dashicons-admin-tools',
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
@@ -119,11 +235,10 @@ function quienes_somos_home() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'quienes-somos-home', $args );
+	register_post_type( 'nuestros_servicios', $args );
 
 }
-add_action( 'init', 'quienes_somos_home', 0 );
-
+add_action( 'init', 'nuestros_servicios', 0 );
 
 // Register Custom Post Type
 function quienes_somos_historia() {
@@ -188,7 +303,7 @@ function team() {
 	$labels = array(
 		'name'                  => _x( 'teams', 'Post Type General Name', 'apk' ),
 		'singular_name'         => _x( 'team', 'Post Type Singular Name', 'apk' ),
-		'menu_name'             => __( 'Team', 'apk' ),
+		'menu_name'             => __( 'Equipo', 'apk' ),
 		'name_admin_bar'        => __( 'Team', 'apk' ),
 		'archives'              => __( 'Item Archives', 'apk' ),
 		'attributes'            => __( 'Item Attributes', 'apk' ),
@@ -296,62 +411,6 @@ function galeria() {
 }
 add_action( 'init', 'galeria', 0 );
 
-// Register Custom Post Type
-function nuestros_servicios() {
-
-	$labels = array(
-		'name'                  => _x( 'nuestros_servicios', 'Post Type General Name', 'apk' ),
-		'singular_name'         => _x( 'nuestro_servicio', 'Post Type Singular Name', 'apk' ),
-		'menu_name'             => __( 'Nuestros_Servicios', 'apk' ),
-		'name_admin_bar'        => __( 'Nuestros_Servicios', 'apk' ),
-		'archives'              => __( 'Item Archives', 'apk' ),
-		'attributes'            => __( 'Item Attributes', 'apk' ),
-		'parent_item_colon'     => __( 'Parent Item:', 'apk' ),
-		'all_items'             => __( 'All Items', 'apk' ),
-		'add_new_item'          => __( 'Add New Item', 'apk' ),
-		'add_new'               => __( 'Add New', 'apk' ),
-		'new_item'              => __( 'New Item', 'apk' ),
-		'edit_item'             => __( 'Edit Item', 'apk' ),
-		'update_item'           => __( 'Update Item', 'apk' ),
-		'view_item'             => __( 'View Item', 'apk' ),
-		'view_items'            => __( 'View Items', 'apk' ),
-		'search_items'          => __( 'Search Item', 'apk' ),
-		'not_found'             => __( 'Not found', 'apk' ),
-		'not_found_in_trash'    => __( 'Not found in Trash', 'apk' ),
-		'featured_image'        => __( 'Featured Image', 'apk' ),
-		'set_featured_image'    => __( 'Set featured image', 'apk' ),
-		'remove_featured_image' => __( 'Remove featured image', 'apk' ),
-		'use_featured_image'    => __( 'Use as featured image', 'apk' ),
-		'insert_into_item'      => __( 'Insert into item', 'apk' ),
-		'uploaded_to_this_item' => __( 'Uploaded to this item', 'apk' ),
-		'items_list'            => __( 'Items list', 'apk' ),
-		'items_list_navigation' => __( 'Items list navigation', 'apk' ),
-		'filter_items_list'     => __( 'Filter items list', 'apk' ),
-	);
-	$args = array(
-		'label'                 => __( 'nuestro_servicio', 'apk' ),
-		'description'           => __( 'los servicios que ofrece Lio', 'apk' ),
-		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail' ),
-		'taxonomies'            => array( 'category', 'post_tag' ),
-		'hierarchical'          => false,
-		'public'                => true,
-		'show_ui'               => true,
-		'show_in_menu'          => true,
-		'menu_position'         => 5,
-		'menu_icon'             => 'dashicons-admin-tools',
-		'show_in_admin_bar'     => true,
-		'show_in_nav_menus'     => true,
-		'can_export'            => true,
-		'has_archive'           => true,
-		'exclude_from_search'   => false,
-		'publicly_queryable'    => true,
-		'capability_type'       => 'page',
-	);
-	register_post_type( 'nuestros_servicios', $args );
-
-}
-add_action( 'init', 'nuestros_servicios', 0 );
 
 
 // Register Custom Post Type
@@ -467,63 +526,6 @@ function enfoque_about() {
 
 }
 add_action( 'init', 'enfoque_about', 0 );
-
-// Register Custom Post Type
-function logros() {
-
-	$labels = array(
-		'name'                  => _x( 'logros', 'Post Type General Name', 'apk' ),
-		'singular_name'         => _x( 'logro', 'Post Type Singular Name', 'apk' ),
-		'menu_name'             => __( 'Logros', 'apk' ),
-		'name_admin_bar'        => __( 'Logros', 'apk' ),
-		'archives'              => __( 'Item Archives', 'apk' ),
-		'attributes'            => __( 'Item Attributes', 'apk' ),
-		'parent_item_colon'     => __( 'Parent Item:', 'apk' ),
-		'all_items'             => __( 'All Items', 'apk' ),
-		'add_new_item'          => __( 'Add New Item', 'apk' ),
-		'add_new'               => __( 'Add New', 'apk' ),
-		'new_item'              => __( 'New Item', 'apk' ),
-		'edit_item'             => __( 'Edit Item', 'apk' ),
-		'update_item'           => __( 'Update Item', 'apk' ),
-		'view_item'             => __( 'View Item', 'apk' ),
-		'view_items'            => __( 'View Items', 'apk' ),
-		'search_items'          => __( 'Search Item', 'apk' ),
-		'not_found'             => __( 'Not found', 'apk' ),
-		'not_found_in_trash'    => __( 'Not found in Trash', 'apk' ),
-		'featured_image'        => __( 'Featured Image', 'apk' ),
-		'set_featured_image'    => __( 'Set featured image', 'apk' ),
-		'remove_featured_image' => __( 'Remove featured image', 'apk' ),
-		'use_featured_image'    => __( 'Use as featured image', 'apk' ),
-		'insert_into_item'      => __( 'Insert into item', 'apk' ),
-		'uploaded_to_this_item' => __( 'Uploaded to this item', 'apk' ),
-		'items_list'            => __( 'Items list', 'apk' ),
-		'items_list_navigation' => __( 'Items list navigation', 'apk' ),
-		'filter_items_list'     => __( 'Filter items list', 'apk' ),
-	);
-	$args = array(
-		'label'                 => __( 'logro', 'apk' ),
-		'description'           => __( 'logros de la empresa', 'apk' ),
-		'labels'                => $labels,
-		'supports'              => array( 'title' ),
-		'taxonomies'            => array( 'category', 'post_tag' ),
-		'hierarchical'          => false,
-		'public'                => true,
-		'show_ui'               => true,
-		'show_in_menu'          => true,
-		'menu_position'         => 5,
-		'menu_icon'             => 'dashicons-admin-site-alt3',
-		'show_in_admin_bar'     => true,
-		'show_in_nav_menus'     => true,
-		'can_export'            => true,
-		'has_archive'           => true,
-		'exclude_from_search'   => false,
-		'publicly_queryable'    => true,
-		'capability_type'       => 'page',
-	);
-	register_post_type( 'logros', $args );
-
-}
-add_action( 'init', 'logros', 0 );
 
 
 function wpb_custom_new_menu() {

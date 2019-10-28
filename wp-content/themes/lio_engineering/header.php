@@ -15,7 +15,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
  
-
+  <?php wp_head(); ?>
 </head>
 
 <body>
@@ -41,7 +41,7 @@
           <a class="navbar-brand" href="#">
             <img id="iso" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_2@3x.png">
           </a>
-          <button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas"
+          <AAAAAAAtton class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas"
             type="button">
             <span class="hamburger-box"></span> 
             <span class="hamburger-inner"></span>
@@ -56,33 +56,37 @@
                     src="<?php echo get_template_directory_uri(); ?>/assets/img/icon_5.png">93434343</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#clients" id="clients"> <img src="assets/img/icon_6.png">info@lion.com</a>
+                <a class="nav-link pr-4" href="#clients" id="clients"> <img src="assets/img/icon_6.png">info@lion.com</a>
               </li>
               <li class="nav-item">
-                <a class="" href="#benefits"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/fb.png"></a>
+                <a class="pl-0" href="#benefits"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/fb.png"></a>
               </li>
 
               <li class="nav-item ">
-                <a class="" href="#benefits"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/instagram.png"></a>
+                <a class="pl-0" href="#benefits"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/instagram.png"></a>
               </li>
 
               <li class="nav-item">
-                <a class="" href="#benefits"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/in.png"></a>
+                <a class="pl-0" href="#benefits"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/in.png"></a>
               </li>
               <li class="nav-item">
-                <a class="" href="#benefits"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter.png"></a>
+                <a class="pl-0" href="#benefits"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter.png"></a>
               </li>
               
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link idioma  idioma-border" lang="es-CO" hreflang="es-CO" href="#">ESP</a>
                 
               </li>
               <li class="nav-item">
                 <a class="nav-link idioma" lang="en-US" hreflang="en-US" href="#">ENG</a>
-              </li>  
+              </li>   -->
+
+              <li class="align-items-center d-flex justify-content-center">
               <?php if(is_active_sidebar('main_sidebar')){
                 dynamic_sidebar('main_sidebar');
                }?>
+              </li>
+            
             </ul>
             <?php
           wp_nav_menu( array(

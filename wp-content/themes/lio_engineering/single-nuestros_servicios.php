@@ -39,9 +39,10 @@
       <div class="row">
         <div class="col-md-6">
           <div class="history_description">
-            <p>
-             <?php the_content(); ?>
-            </p>
+          <?php if( get_field('Descripcion_del_servicio') ): ?>
+                <p> <?php the_field('Descripcion_del_servicio'); ?>  </p>
+                    <?php endif; ?>
+           
           </div>
         </div>
         <div class="col-md-6">
@@ -74,10 +75,9 @@
                   <div class="date__description description__galery">
                     <div class="">
                       <p><?php the_title(); ?></p>
-      
-                      <span>
-                       <?php echo excerpt(30); ?>   
-                      </span>
+                      <?php if( get_field('Descripcion_del_servicio') ): ?>
+                <p> <?php the_field('Descripcion_del_servicio'); ?>  </p>
+                    <?php endif; ?>
                     </div>
                   </div>
                 </div>
